@@ -1,0 +1,10 @@
+<h3>What's your name?</h3>
+
+<form action="/new_player" method="post">
+	Player name:<input type="text" name="name">
+							<input type="submit" value="Play">
+</form>
+
+<% if @player %>
+	<h5>Welcome to the jungle <%= @player.name %></h5>
+<% end %>
